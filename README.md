@@ -19,45 +19,17 @@ The success of the project will be measured based on the following metrics:
 - Responsiveness and ease of use of the web application.
 - Reduction in unplanned downtime and repair costs
 
-## 4. Requirements & Constraints
+## 4. Methodology
 ---
-### 4.1 Functional Requirements
-
-The web application should provide the following functionality:
-
-- Users can provide the process parameters to the model and receive a prediction of whether the equipment will fail or not, and the type of failure.
-- Users can view and infer the performance metrics of different machine learning models.
-- Users can visualize the data and gain insights into the behavior of the equipment.
-
-### 4.2 Non-functional Requirements
-
-The web application should meet the following non-functional requirements:
-
-- The model should have high precision, recall, and F1 score.
-- The web application should be responsive and easy to use.
-- The web application should be secure and protect user data.
-
-### 4.3 Constraints
-
-- The application should be built using FastAPI and Streamlit and deployed using Docker and Digital Ocean droplets.
-- The cost of deployment should be minimal.
-
-### 4.4 Out-of-scope
-
-- Integrating with external applications or data sources.
-- Providing detailed equipment diagnostic information.
-
-## 5. Methodology
----
-### 5.1. Problem Statement
+### 4.1. Problem Statement
 
 The problem is to develop a machine learning model that predicts equipment failures based on process parameters.
 
-### 5.2. Data
+### 4.2. Data
 
 The dataset consists of more than 50,000 data points stored as rows with 14 features in columns. The features include process parameters such as air and process temperatures, rotational speed, torque, and tool wear. The target variable is a binary label indicating whether the equipment failed or not.
 
-### 5.3. Techniques
+### 4.3. Techniques
 We will utilize both a binary classification model, and a multi-class classification model to predict equipment failures, and type of equipment fauilure respectively. The following machine learning techniques will be used:
 
 - Data preprocessing and cleaning
@@ -65,3 +37,26 @@ We will utilize both a binary classification model, and a multi-class classifica
 - Model selection and training
 - Hyperparameter tuning
 - Model evaluation and testing
+
+## Project Workflow
+
+1. **Data Preprocessing**: Includes cleaning, encoding categorical features, and normalizing numerical features.
+2. **Exploratory Data Analysis (EDA)**: Insights were gathered from the dataset to understand feature distributions and relationships.
+3. **Model Building and Evaluation**: Various machine learning models were trained and evaluated to predict equipment failure and failure type.
+4. **Web Application**: Developed using Streamlit to allow users to input feature values and receive predictions.
+
+## Screenshots
+
+Below are screenshots of the Streamlit web application:
+
+![Screenshot 1](images/image1.png)
+*Input form and prediction button*
+
+![Screenshot 2](images/image2.png)
+*Prediction results and failure type*
+
+
+## Conclusion
+The Predictive Analytics for Equipment Failure project leverages advanced machine learning techniques to provide valuable insights into equipment maintenance. By predicting both the likelihood of failure and the type of failure, the application helps organizations take proactive measures, potentially reducing operational costs and downtime.
+
+The project demonstrates the practical application of predictive analytics in industrial settings and showcases the effectiveness of combining machine learning models with a user-friendly web interface.
